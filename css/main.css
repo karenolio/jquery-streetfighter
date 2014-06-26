@@ -1,0 +1,68 @@
+P {
+  font-family: sans-serif;
+  color: white;
+  padding-left: 90px;
+  padding-top: 100px;
+}
+
+body {
+	background-color: black;
+}
+
+.main { /* this is the horizontal block of white */
+  background-color: white;
+  margin-top: 110px;
+  padding-left: 100px;
+  min-width: 1200px;
+  height: 500px;
+}
+
+.ryu { 
+	float: left;
+}
+
+.ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool { /*avoiding repetition by assigning the width and height of 659 and 494 for all three classes at the same time*/
+  width: 659px;
+  height: 494px;
+}
+
+.ryu-ready, .ryu-throwing, .ryu-cool { /*bc we only display the divs in response to events*/
+  display: none;
+} 
+
+.ryu-ready {
+  background-image: url('../images/ryu-ready-position.gif');
+}
+
+.ryu-still {
+  background-image: url('../images/ryu-standing-still.png');
+}
+
+.ryu-throwing {
+  background-image: url('../images/ryu-throwing-hadouken.png');
+}
+
+.ryu-cool {
+  background-image: url('../images/ryu-cool.gif');
+}
+
+.hadouken, .ryu-ready, .ryu-still, .ryu-throwing, .ryu-cool { /*images are not repeated if the div they are in is bigger than their dimensions*/
+  background-repeat: no-repeat;
+}
+
+.hadouken {
+  background-image: url('../images/hadouken.gif');
+  width: 156px; 
+  height: 90px;
+  display: none;
+  position: relative;
+  top: 167px;
+  left: -212px;
+  float: left;
+}
+
+
+
+
+
+
