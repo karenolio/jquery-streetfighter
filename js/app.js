@@ -36,7 +36,7 @@ $(document).ready(function() {
 
 //activate cool pose when x is pressed
   $(document).keydown(function() {
-    if (event.which == 88 {
+    if (event.which == 88) {
       $('.ryu-still').hide();
       $('.ryu-ready').hide();
       $('.ryu-throwing').hide();
