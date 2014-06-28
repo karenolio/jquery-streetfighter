@@ -34,14 +34,17 @@ $(document).ready(function() {
   		$('.ryu-ready').show();
 });
 
-//activate cool pose when x is pressed
+//cool pose when x is pressed
   $(document).keydown(function() {
     if (event.which == 88) {
+
       $('.ryu-still').hide();
       $('.ryu-ready').hide();
       $('.ryu-throwing').hide();
       $('.ryu-cool').show();
+      playAddicted(); //play addicted song 
       }
+      
    });
 
   $(document).keyup(function() {
@@ -58,3 +61,7 @@ function playHadouken () {
 	  $('#hadouken-sound')[0].play();
 }
 
+function playAddicted () {
+    $('#addicted-sound')[0].volume = 0.5;
+    $('#addicted-sound')[0].play();
+}
