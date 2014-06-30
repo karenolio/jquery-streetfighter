@@ -64,4 +64,5 @@ function playHadouken () {
 function playAddicted () {
     $('#addicted-sound')[0].volume = 0.5;
     $('#addicted-sound')[0].play();
+
 }
